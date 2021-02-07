@@ -13,7 +13,7 @@ $eummver =~ s/_//;
 %license = (LICENSE => "perl") if $eummver > 6.30;
 
 WriteMakefile(
-    NAME        => "Acme-GuessNumber",
+    NAME        => "Acme::GuessNumber",
     VERSION     => "0.04",
     ABSTRACT    => "Automatic number guessing game robot",
     AUTHOR      => "imacat <imacat\@mail.imacat.idv.tw>",
