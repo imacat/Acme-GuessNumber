@@ -4,7 +4,7 @@ Acme-GuessNumber change log
 
 2021-02-07
 	Acme-GuessNumber is now hosted on GitHub.
-	 1. Added MANIFEST.SKIP.
+	 1. MANIFEST.SKIP: Added.
 	 2. COPYING: Removed the redundant and irrelevant GPL license copy.
 	 3. INSTALL, README, TODO, README.md: Replaced the messy
 	    GNU-styled documents with a single Markdown README.md.
