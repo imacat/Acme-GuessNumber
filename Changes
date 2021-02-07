@@ -8,9 +8,8 @@ Acme-GuessNumber change log
 	 2. COPYING: Removed the redundant and irrelevant GPL license copy.
 	 3. INSTALL, README, TODO, README.md: Replaced the messy
 	    GNU-styled documents with a single Markdown README.md.
-	 4. Revised the URL in README.
-	 5. Added the CPAN distribution metadata to Makefile.PL and
-	    Build.PL.
+	 4. README.md: Revised the URL.
+	 5. Makefile.PL, Build.PL: Added the CPAN distribution metadata.
 
 2013-05-10	version 0.04
 	 1. lib/Acme/GuessNumber.pm: Applied the patch from Mark A. Smith
