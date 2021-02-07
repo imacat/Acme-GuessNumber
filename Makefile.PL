@@ -6,7 +6,7 @@ use ExtUtils::MakeMaker;
 
 WriteMakefile(
     NAME        => "Acme::GuessNumber",
-    VERSION     => "0.04",
+    VERSION     => "0.05",
     ABSTRACT    => "Automatic number guessing game robot",
     AUTHOR      => "imacat <imacat\@mail.imacat.idv.tw>",
     PREREQ_PM   => { },

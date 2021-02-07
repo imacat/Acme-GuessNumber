@@ -1,5 +1,7 @@
 Acme-GuessNumber change log
 
+2021-02-08	version 0.05
+
 2021-02-07
 	Acme-GuessNumber is now hosted on GitHub.
 	 1. Added MANIFEST.SKIP.
@@ -10,7 +12,7 @@ Acme-GuessNumber change log
 	 5. Added the CPAN distribution metadata to Makefile.PL and
 	    Build.PL.
 
-2013-05-10
+2013-05-10	version 0.04
 	 1. lib/Acme/GuessNumber.pm: Applied the patch from Mark A. Smith
             <jprogrammer082@gmail.com>, in order to fix the English errors
             in the POD.  Thank you, Mark, although I will not share my
