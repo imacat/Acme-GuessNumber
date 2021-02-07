@@ -16,6 +16,21 @@ my $build = Module::Build->new(
         "Module::Signature"	=> 0,
         "Test::Pod"		=> 0,
     },
+
+    meta_merge  => {
+        "meta-spec" => { version => 2 },
+        resources   => {
+            homepage    => "https://metacpan.org/release/Acme-GuessNumber",
+            repository  => {
+                type    => "git",
+                url     => "git://github.com/imacat/Acme-GuessNumber.git",
+                web     => "https://github.com/imacat/Acme-GuessNumber",
+            },
+            bugtracker  => {
+                "web"   => "https://github.com/imacat/Acme-GuessNumber/issues"
+            }
+        },
+    },
 );
 
 $build->create_build_script;

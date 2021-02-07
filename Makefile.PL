@@ -18,6 +18,21 @@ WriteMakefile(
         COMPRESS    => "gzip -9",
         SUFFIX      => ".gz",
     },
+
+    META_MERGE  => {
+        "meta-spec" => { version => 2 },
+        resources   => {
+            homepage    => "https://metacpan.org/release/Acme-GuessNumber",
+            repository  => {
+                type    => "git",
+                url     => "git://github.com/imacat/Acme-GuessNumber.git",
+                web     => "https://github.com/imacat/Acme-GuessNumber",
+            },
+            bugtracker  => {
+                "web"   => "https://github.com/imacat/Acme-GuessNumber/issues"
+            }
+        },
+    },
 );
 
 __END__
