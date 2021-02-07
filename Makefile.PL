@@ -13,7 +13,7 @@ WriteMakefile(
     PL_FILES    => { },
     LICENSE     => "perl",
     SIGN        => 1,
-    
+
     dist        => {
         COMPRESS    => "gzip -9",
         SUFFIX      => ".gz",

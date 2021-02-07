@@ -11,7 +11,7 @@ my $build = Module::Build->new(
     dist_author     => "imacat <imacat\@mail.imacat.idv.tw>",
     license         => "perl",
     sign            => 1,
-    
+
     build_requires		=> {
         "Module::Signature"	=> 0,
         "Test::Pod"		=> 0,
