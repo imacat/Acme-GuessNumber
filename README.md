@@ -31,19 +31,22 @@ human being.
 System Requirements
 -------------------
 
-1. Perl, version 5.8.0 or above.  To be a winner of the game you have
-   no option but Perl 5.  You can run `perl -v` to see your current
-   Perl version.  If you don't have Perl, or if you have an older
-   version of Perl, you can download and install/upgrade it from the
-   [Perl website].  If you are using MS-Windows, you can download and
-   install [ActiveState ActivePerl].
+1. Perl, version 5.8.0 or above.  To be a winner you have no option
+   but Perl 5.
+
+   You can run `perl -v` to check your current Perl version.  If you
+   do not have Perl, or if you have an older version of Perl, you can
+   download and install/upgrade it from the [Perl website].  For
+   MS-Windows, you can download and install [Strawberry Perl] or
+   [ActivePerl].
 
 2. Required Perl modules: None.
 
 3. Optional Perl modules: None.
 
 [Perl website]: https://www.perl.org
-[ActiveState ActivePerl]: https://www.activestate.com
+[Strawberry Perl]: https://strawberryperl.com
+[ActivePerl]: https://www.activestate.com/products/perl/
 
 
 Download
@@ -64,20 +67,14 @@ Install
 
 ### Install with [ExtUtils::MakeMaker]
 
-Acme-GuessNumber uses standard Perl installation with
-ExtUtils::MakeMaker.  Follow these steps:
-
     % perl Makefile.PL
     % make
     % make test
     % make install
 
 When running `make install`, make sure you have the privilege to write
-to the installation location.  This usually requires the `root`
+to the installation locations.  This usually requires the `root`
 privilege.
-
-If you are using ActivePerl under MS-Windows, you should use `nmake`
-instead of `make`.  [nmake can be obtained from the Microsoft FTP site.]
 
 If you want to install into another location, you can set the
 `PREFIX`.  For example, to install into your home when you are not
@@ -88,11 +85,12 @@ If you want to install into another location, you can set the
 Refer to the documentation of ExtUtils::MakeMaker for more
 installation options (by running `perldoc ExtUtils::MakeMaker`).
 
+For MS-Windows, since `make` is not universally available,
+Module::Build is preferred to ExtUtils::MakeMaker.  See the
+instructions below.
+
 
 ### Install with [Module::Build]
-
-You can install with Module::Build instead, if you prefer.  Follow
-these steps:
 
     % perl Build.PL
     % ./Build
@@ -100,7 +98,7 @@ these steps:
     % ./Build install
 
 When running `./Build install`, make sure you have the privilege to
-write to the installation location.  This usually requires the `root`
+write to the installation locations.  This usually requires the `root`
 privilege.
 
 If you want to install into another location, you can set the
@@ -115,13 +113,12 @@ installation options (by running `perldoc Module::Build`).
 
 ### Install with the CPAN Shell
 
-You can install with the CPAN shell, if you prefer.  CPAN shell
-takes care of ExtUtils::MakeMaker and Module::Build for you:
+CPAN shell takes care of ExtUtils::MakeMaker or Module::Build for you:
 
     % cpan Acme::GuessNumber
 
 Make sure you have the privilege to write to the installation
-location.  This usually requires the `root` privilege.  Since CPAN
+locations.  This usually requires the `root` privilege.  Since CPAN
 shell 1.81 you can set `make_install_make_command` and
 `mbuild_install_build_command` in your CPAN configuration to switch
 to `root` just before install:
@@ -146,13 +143,13 @@ Refer to the documentation of cpan for more CPAN shell commands
 
 ### Install with the CPANPLUS Shell
 
-You can install with the CPANPLUS shell, if you prefer.  CPANPLUS
-shell takes care of ExtUtils::MakeMaker and Module::Build for you:
+CPANPLUS shell takes care of ExtUtils::MakeMaker or Module::Build for
+you:
 
     % cpanp -i Acme::GuessNumber
 
 Make sure you have the privilege to write to the installation
-location.  This usually requires the `root` privilege.
+locations.  This usually requires the `root` privilege.
 
 If you want to install into another location, you can set
 `makemakerflags` and `buildflags` in your CPANPLUS configuration.
@@ -167,7 +164,6 @@ Refer to the documentation of `cpanp` for more CPANPLUS shell
 commands (by running `perldoc cpanp`).
 
 [ExtUtils::MakeMaker]: https://metacpan.org/release/ExtUtils-MakeMaker
-[nmake can be obtained from the Microsoft FTP site.]: ftp://ftp.microsoft.com/Softlib/MSLFILES/nmake15.exe
 [Module::Build]: https://metacpan.org/release/Module-Build
 
 
